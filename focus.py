@@ -18,5 +18,5 @@ for i in range(x):
             if max_y < j:
                 max_y = j
 
-im = image.crop((min_x, min_y, max_x, max_y))
+im = image.crop((min_x, min_y, max_x + 1, max_y + 1))
 im.save('res.png')
