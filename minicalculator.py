@@ -74,7 +74,7 @@ class MiniCalculator(QWidget):
                 mull = num1 * num2
                 self.result_mul.display(mull)
                 divv = num1 / num2
-                self.result_div.display(float(divv))
+                self.result_div.display(round(float(divv), 3))
         except ZeroDivisionError:
             self.result_div.display('Error')
 
