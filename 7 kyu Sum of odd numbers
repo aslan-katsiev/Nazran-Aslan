@@ -1,0 +1,7 @@
+def row_sum_odd_numbers(n):
+    fn = n + (n - 1) ** 2
+    ln = fn + (n - 1) * 2
+    res = []
+    for i in range(fn, ln + 1, 2):
+        res.append(i)
+    return sum(res)
